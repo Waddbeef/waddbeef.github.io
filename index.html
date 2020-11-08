@@ -147,7 +147,7 @@
                 let key = document.getElementById("input-test-key").value;
                 let ids = document.getElementById("input-test-ids").value;
 
-                xhr.open("GET", "http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=" + key + "&steamids=" + ids);
+                xhr.open("GET", "https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=" + key + "&steamids=" + ids);
                 xhr.send();
             }
         };
