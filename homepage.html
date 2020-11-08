@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Home</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <div class="container">
+        <div id="clock">00:00:00</div>
+        <div id="search">
+            <input type="text" id="search-field" class="inline" name="search-field" placeholder="Search with DuckDuckGo" value="" autofocus autocomplete="on" autocorrect="off" autocapitalize="off" spellcheck="true">
+        </div>
+        <div class="bookmark-container">
+            <div class="bookmark-set">
+                <div class="bookmark-title">Social & Video</div>
+                <div class="bookmark-inner-container">
+                    <a class="bookmark" href="https://youtube.com/" target="_blank">Youtube</a>
+                    <a class="bookmark" href="https://twitch.tv/directory/following/" target="_blank">Twitch</a>
+                    <a class="bookmark" href="https://twitter.com/home/" target="_blank">Twitter</a>
+                    <a class="bookmark" href="https://reddit.com/" target="_blank">Reddit</a>
+                    <a class="bookmark" href="https://9gag.com/" target="_blank">9GAG</a>
+                    <a class="bookmark" href="https://steamcommunity.com/" target="_blank">Steam</a>
+                </div>
+            </div>
+            <div class="bookmark-set">
+                <div class="bookmark-title">Rocket League</div>
+                <div class="bookmark-inner-container">
+                    <a class="bookmark" href="https://youtube.com/c/RocketLeague/" target="_blank">Youtube</a>
+                    <a class="bookmark" href="https://twitch.tv/RocketLeague/" target="_blank">Twitch</a>
+                    <a class="bookmark" href="https://twitter.com/RocketLeague/" target="_blank">Twitter</a>
+                    <a class="bookmark" href="https://reddit.com/r/RocketLeague/" target="_blank">Reddit</a>
+                    <a class="bookmark" href="https://www.rocketleague.com/news/" target="_blank">News</a>
+                    <a class="bookmark" href="https://store.steampowered.com/app/252950/Rocket_League/" target="_blank">Steam</a>
+                    <a class="bookmark" href="https://rl.insider.gg/pc/" target="_blank">Insider</a>
+                    <a class="bookmark" href="https://www.rl-trades.com/" target="_blank">Trades</a>
+                    <a class="bookmark" href="https://www.rl6mans.com/leaderboards/eu/b" target="_blank">6Mans</a>
+                    <a class="bookmark" href="https://smash.gg/" target="_blank">Smash</a>
+                    <a class="bookmark" href="https://app.kayzr.com/tournaments/" target="_blank">Kayzr</a>
+                </div>
+            </div>
+            <div class="bookmark-set">
+                <div class="bookmark-title">Waddbeef</div>
+                <div class="bookmark-inner-container">
+                    <a class="bookmark" href="https://twitch.tv/Waddbeef/" target="_blank">Twitch</a>
+                    <a class="bookmark" href="https://twitter.com/Waddbeef/" target="_blank">Twitter</a>
+                    <a class="bookmark" href="https://reddit.com/u/Waddbeef/" target="_blank">Reddit</a>
+                    <a class="bookmark" href="https://steamcommunity.com/id/Waddbeef/" target="_blank">Steam</a>
+                    <a class="bookmark" href="https://rocketleague.tracker.network/rocket-league/profile/steam/Waddbeef/overview" target="_blank">Tracker</a>
+                    <a class="bookmark" href="https://app.kayzr.com/profile/Waddbeef" target="_blank">Kayzr</a>
+                </div>
+            </div>
+            <div class="bookmark-set">
+            <div class="bookmark-title">Editable Links</div>
+                <div class="bookmark-inner-container">
+                    <div class="bookmark">
+                        <label for="input-youtube" id="label-youtube" title="https://www.youtube.com/c/&">Youtube</label><!--
+                     --><input type="text" id="input-youtube" class="input-field" name="link" placeholder="Creator" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                    </div>
+                    <div class="bookmark">
+                        <label for="input-twitch" id="label-twitch" title="https://www.twitch.tv/&">Twitch</label><!--
+                        --><input type="text" id="input-twitch" class="input-field" name="link" placeholder="Username" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                    </div>
+                    <div class="bookmark">
+                        <label for="input-twitter" id="label-twitter" title="https://www.twitter.com/&">Twitter</label><!--
+                        --><input type="text" id="input-twitter" class="input-field" name="link" placeholder="Username" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                    </div>
+                    <div class="bookmark">
+                        <label for="input-redditr" id="label-redditr" title="https://www.reddit.com/r/&">Reddit</label><!--
+                        --><input type="text" id="input-redditr" class="input-field" name="link" placeholder="Sub Reddit" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                    </div>
+                    <div class="bookmark">
+                        <label for="input-redditu" id="label-redditu" title="https://www.reddit.com/u/&">Reddit</label><!--
+                        --><input type="text" id="input-redditu" class="input-field" name="link" placeholder="Username" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                    </div>
+                    <div class="bookmark">
+                        <label for="input-steam" id="label-steam" title="https://steamcommunity.com/id/&">Steam</label><!--
+                        --><input type="text" id="input-steam" class="input-field" name="link" placeholder="Steam ID" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                    </div>
+                    <div class="bookmark">
+                        <label for="input-tracker" id="label-tracker" title="https://rocketleague.tracker.network/rocket-league/profile/steam/&/overview">Tracker</label><!--
+                        --><input type="text" id="input-tracker" class="input-field" name="link" placeholder="Steam ID" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        for (let element of document.getElementsByClassName("input-field"))
+        {
+            element.addEventListener("keydown", event => { 
+                if (event.keyCode === 13)
+                {
+                    let label = document.getElementById(element.id.replace("input", "label"));
+                    if (element.value !== "")
+                        window.open(label.title.replace("&", element.value));
+                }
+            })
+        }
+
+        // Search on enter key event
+        let search = document.getElementById("search-field");
+        search.addEventListener("keydown",  event => { 
+            if (event.keyCode === 13 && search.value !== "")
+                window.open("https://duckduckgo.com/?q=" + search.value);
+        });
+
+        // Get current time and format
+        getTime = () => {
+            let date = new Date(),
+                min = date.getMinutes(),
+                sec = date.getSeconds(),
+                hour = date.getHours();
+
+            return "" + 
+                (hour < 10 ? ("0" + hour) : hour) + ":" + 
+                (min < 10 ? ("0" + min) : min) + ":" + 
+                (sec < 10 ? ("0" + sec) : sec);
+        }
+
+        window.onload = () => {
+            // let xhr = new XMLHttpRequest();
+            // // Request to open weather map
+            // xhr.open('GET', 'http://api.openweathermap.org/data/2.5/weather?id=4737316&units=imperial&appid=e5b292ae2f9dae5f29e11499c2d82ece');
+            // xhr.onload = () => {
+            //     if (xhr.readyState === 4) {
+            //         if (xhr.status === 200) {
+            //             let json = JSON.parse(xhr.responseText);
+            //             console.log(json);
+            //             document.getElementById("temp").innerHTML = json.main.temp.toFixed(0) + " F";
+            //             document.getElementById("weather-description").innerHTML = json.weather[0].description;
+            //         } else {
+            //             console.log('error msg: ' + xhr.status);
+            //         }
+            //     }
+            // }
+            // xhr.send();
+            // Set up the clock
+            document.getElementById("clock").innerHTML = getTime();
+            // Set clock interval to tick clock
+            setInterval( () => {
+                document.getElementById("clock").innerHTML = getTime();
+            }, 100);
+        }
+    </script>
+</body>
+</html>
