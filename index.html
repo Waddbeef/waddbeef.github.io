@@ -153,21 +153,6 @@
         };
 
         window.onload = () => {
-
-            if (document.URL === "waddbeef.github.io")
-            {
-                let xhr = new XMLHttpRequest();
-                xhr.onreadystatechange = () => {
-                    if (this.readyState == 4 && this.status == 200) {
-                        console.log(this.responseText);
-                        let myArr = JSON.parse(this.responseText);
-                        console.log(myArr);
-                    }
-                };
-                xhr.open("GET", "http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=8D23DBFA58E57498338EB426EB3CE8FD&steamids=76561197960435530");
-                xhr.send();
-            }
-
             // let xhr = new XMLHttpRequest();
             // // Request to open weather map
             // xhr.open('GET', 'http://api.openweathermap.org/data/2.5/weather?id=4737316&units=imperial&appid=e5b292ae2f9dae5f29e11499c2d82ece');
