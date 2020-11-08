@@ -54,7 +54,17 @@
                 </div>
             </div>
             <div class="bookmark-set">
-            <div class="bookmark-title">Editable Links</div>
+                <div class="bookmark-title">TEST</div>
+                <div class="bookmark-inner-container">
+                    <div class="bookmark">
+                        <a class="bookmark" onclick="test()">steam api test</a>
+                        <input type="text" id="input-test-key" class="" name="link" placeholder="Steam Key" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                        <input type="text" id="input-test-ids" class="" name="link" placeholder="Steam ID's" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                    </div>
+                </div>
+            </div>
+            <div class="bookmark-set">
+                <div class="bookmark-title">Editable Links</div>
                 <div class="bookmark-inner-container">
                     <div class="bookmark">
                         <label for="input-youtube" id="label-youtube" title="https://www.youtube.com/c/&">Youtube</label><!--
@@ -120,9 +130,44 @@
                 (hour < 10 ? ("0" + hour) : hour) + ":" + 
                 (min < 10 ? ("0" + min) : min) + ":" + 
                 (sec < 10 ? ("0" + sec) : sec);
-        }
+        };
+
+        test = () => {
+            if (document.URL === "waddbeef.github.io")
+            {
+                let xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = () => {
+                    if (this.readyState == 4 && this.status == 200) {
+                        console.log(this.responseText);
+                        let myArr = JSON.parse(this.responseText);
+                        console.log(myArr);
+                    }
+                };
+
+                let key = document.getElementById("input-test-key").value;
+                let ids = document.getElementById("input-test-ids").value;
+
+                xhr.open("GET", "http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=" + key + "&steamids=" + ids);
+                xhr.send();
+            }
+        };
 
         window.onload = () => {
+
+            if (document.URL === "waddbeef.github.io")
+            {
+                let xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = () => {
+                    if (this.readyState == 4 && this.status == 200) {
+                        console.log(this.responseText);
+                        let myArr = JSON.parse(this.responseText);
+                        console.log(myArr);
+                    }
+                };
+                xhr.open("GET", "http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=8D23DBFA58E57498338EB426EB3CE8FD&steamids=76561197960435530");
+                xhr.send();
+            }
+
             // let xhr = new XMLHttpRequest();
             // // Request to open weather map
             // xhr.open('GET', 'http://api.openweathermap.org/data/2.5/weather?id=4737316&units=imperial&appid=e5b292ae2f9dae5f29e11499c2d82ece');
