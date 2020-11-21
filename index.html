@@ -18,39 +18,39 @@
             <div class="bookmark-set">
                 <div class="bookmark-title">Social & Video</div>
                 <div class="bookmark-inner-container">
-                    <a class="bookmark" href="https://youtube.com/" target="_blank">Youtube</a>
-                    <a class="bookmark" href="https://twitch.tv/directory/following/" target="_blank">Twitch</a>
-                    <a class="bookmark" href="https://twitter.com/home/" target="_blank">Twitter</a>
-                    <a class="bookmark" href="https://reddit.com/" target="_blank">Reddit</a>
-                    <a class="bookmark" href="https://9gag.com/" target="_blank">9GAG</a>
-                    <a class="bookmark" href="https://steamcommunity.com/" target="_blank">Steam</a>
+                    <a class="bookmark" href="https://youtube.com/">Youtube</a>
+                    <a class="bookmark" href="https://twitch.tv/directory/following/">Twitch</a>
+                    <a class="bookmark" href="https://twitter.com/home/">Twitter</a>
+                    <a class="bookmark" href="https://reddit.com/">Reddit</a>
+                    <a class="bookmark" href="https://9gag.com/">9GAG</a>
+                    <a class="bookmark" href="https://steamcommunity.com/">Steam</a>
                 </div>
             </div>
             <div class="bookmark-set">
                 <div class="bookmark-title">Rocket League</div>
                 <div class="bookmark-inner-container">
-                    <a class="bookmark" href="https://youtube.com/c/RocketLeague/" target="_blank">Youtube</a>
-                    <a class="bookmark" href="https://twitch.tv/RocketLeague/" target="_blank">Twitch</a>
-                    <a class="bookmark" href="https://twitter.com/RocketLeague/" target="_blank">Twitter</a>
-                    <a class="bookmark" href="https://reddit.com/r/RocketLeague/" target="_blank">Reddit</a>
-                    <a class="bookmark" href="https://www.rocketleague.com/news/" target="_blank">News</a>
-                    <a class="bookmark" href="https://store.steampowered.com/app/252950/Rocket_League/" target="_blank">Steam</a>
-                    <a class="bookmark" href="https://rl.insider.gg/pc/" target="_blank">Insider</a>
-                    <a class="bookmark" href="https://www.rl-trades.com/" target="_blank">Trades</a>
-                    <a class="bookmark" href="https://www.rl6mans.com/leaderboards/eu/b" target="_blank">6Mans</a>
-                    <a class="bookmark" href="https://smash.gg/" target="_blank">Smash</a>
-                    <a class="bookmark" href="https://app.kayzr.com/tournaments/" target="_blank">Kayzr</a>
+                    <a class="bookmark" href="https://youtube.com/c/RocketLeague/">Youtube</a>
+                    <a class="bookmark" href="https://twitch.tv/RocketLeague/">Twitch</a>
+                    <a class="bookmark" href="https://twitter.com/RocketLeague/">Twitter</a>
+                    <a class="bookmark" href="https://reddit.com/r/RocketLeague/">Reddit</a>
+                    <a class="bookmark" href="https://www.rocketleague.com/news/">News</a>
+                    <a class="bookmark" href="https://store.steampowered.com/app/252950/Rocket_League/">Steam</a>
+                    <a class="bookmark" href="https://rl.insider.gg/pc/">Insider</a>
+                    <a class="bookmark" href="https://www.rl-trades.com/">Trades</a>
+                    <a class="bookmark" href="https://www.rl6mans.com/leaderboards/eu/b">6Mans</a>
+                    <a class="bookmark" href="https://smash.gg/">Smash</a>
+                    <a class="bookmark" href="https://app.kayzr.com/tournaments/">Kayzr</a>
                 </div>
             </div>
             <div class="bookmark-set">
                 <div class="bookmark-title">Waddbeef</div>
                 <div class="bookmark-inner-container">
-                    <a class="bookmark" href="https://twitch.tv/Waddbeef/" target="_blank">Twitch</a>
-                    <a class="bookmark" href="https://twitter.com/Waddbeef/" target="_blank">Twitter</a>
-                    <a class="bookmark" href="https://reddit.com/u/Waddbeef/" target="_blank">Reddit</a>
-                    <a class="bookmark" href="https://steamcommunity.com/id/Waddbeef/" target="_blank">Steam</a>
-                    <a class="bookmark" href="https://rocketleague.tracker.network/rocket-league/profile/steam/Waddbeef/overview" target="_blank">Tracker</a>
-                    <a class="bookmark" href="https://app.kayzr.com/profile/Waddbeef" target="_blank">Kayzr</a>
+                    <a class="bookmark" href="https://twitch.tv/Waddbeef/">Twitch</a>
+                    <a class="bookmark" href="https://twitter.com/Waddbeef/">Twitter</a>
+                    <a class="bookmark" href="https://reddit.com/u/Waddbeef/">Reddit</a>
+                    <a class="bookmark" href="https://steamcommunity.com/id/Waddbeef/">Steam</a>
+                    <a class="bookmark" href="https://rocketleague.tracker.network/rocket-league/profile/steam/Waddbeef/overview">Tracker</a>
+                    <a class="bookmark" href="https://app.kayzr.com/profile/Waddbeef">Kayzr</a>
                 </div>
             </div>
             <div class="bookmark-set">
@@ -68,7 +68,7 @@
                 <div class="bookmark-inner-container">
                     <div class="bookmark">
                         <label for="input-youtube" id="label-youtube" title="https://www.youtube.com/c/&">Youtube</label><!--
-                     --><input type="text" id="input-youtube" class="input-field" name="link" placeholder="Creator" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                        --><input type="text" id="input-youtube" class="input-field" name="link" placeholder="Creator" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
                     </div>
                     <div class="bookmark">
                         <label for="input-twitch" id="label-twitch" title="https://www.twitch.tv/&">Twitch</label><!--
@@ -107,7 +107,7 @@
                 {
                     let label = document.getElementById(element.id.replace("input", "label"));
                     if (element.value !== "")
-                        window.open(label.title.replace("&", element.value));
+                       window.location.href = label.title.replace("&", element.value);
                 }
             })
         }
@@ -116,7 +116,7 @@
         let search = document.getElementById("search-field");
         search.addEventListener("keydown",  event => { 
             if (event.keyCode === 13 && search.value !== "")
-                window.open("https://duckduckgo.com/?q=" + search.value);
+                window.location.href = "https://duckduckgo.com/?q=" + search.value;
         });
 
         // Get current time and format
